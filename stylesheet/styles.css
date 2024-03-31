@@ -1,9 +1,13 @@
 
-.navbar {
-    font-size: 20px;
+/* */
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #1E1E2F; /* Dark background */
+    color: #FFFFFF;
 }
 
-ul {
+/* Styling a horizontal navbar */
+#navbar_ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
@@ -11,10 +15,17 @@ ul {
     background: #333;
 }
 
-li {
-    float: left;
+/* Floating some parts of the navbar to the left side */
+#navbar_li {
+    float:left;
 }
 
+/* Floating personal links such as user loging/sign up and profile to the right side of the navbar */
+#navbar_li_profile {
+    float:right;
+}
+
+/* Style the links of the navbar */
 li a {
     display: block;
     color: white;
@@ -23,34 +34,73 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+/* Create a container for the quiz */
+#quiz-container {
+    background-color: #2C2C44; /* Deep blue background */
+    color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    padding: 20px;
 }
 
-.profile {
-    float: right;
+/* Style the main headder */
+h1 {
+    color: #FF8C32; /* Vibrant Orange */
 }
 
+/* Stylize the way questions are displayed */
+#question {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #FFD700; /* Gold for questions */
+}
+
+/* Stylize the way answer choices appear on screen */
+#choices label {
+    background-color: #007bff; /* Bootstrap primary blue */
+    border-color: #007bff;
+    color: black;
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+/* Changes the way answer choices look when hovered overs */
+#choices label:hover, #choices label:focus-within {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Stylize buttons */
+button#next-btn {
+    background-color: #FF8C32; /* Matching vibrant orange */
+    border: none;
+}
+
+/* Changes the color of the button when hovered */
+button#next-btn:hover {
+    background-color: #e76e22; /* Darker shade for hover effect */
+}
+
+/* Stytlize the timer */
+#timer {
+    color: #FFD700; /* Gold, to stand out */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Allows the container to take up 75% of the page; used for separating the page */
 .leftcol {
     float: left;
     width: 75%;
 }
 
+/* Allows the container to take up 25% of the page; used for separating the page */
 .rightcol {
     float: left;
     width: 25%;
     padding-left: 20px;
-    background-color: lightgray;
-    
 }
 
-.card {
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.row::after {
-    content: '';
-    display: table;
-    clear: both;
+#showScore {
+    font-size: 1.25px;
 }
