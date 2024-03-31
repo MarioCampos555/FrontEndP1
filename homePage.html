@@ -6,7 +6,7 @@
     <title>Game Hub</title>
     <!-- Use a consistent version of Bootstrap across all your HTML files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet/styles2.css">
+    <link rel="stylesheet" href="stylesheet/homePage.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -17,13 +17,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="homePage.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="games/index1.html">Game 1</a>
+              <a class="nav-link" href="AboutUs/aboutUs.html">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="signup.html">Log-in/ Sign-up</a>
+                <a class="nav-link" href="signup/signup.html">Log-in/ Sign-up</a>
               </li> 
             <!-- Add more games or sections as needed -->
           </ul>
@@ -54,15 +54,20 @@
     <div class="tab-content">
         <div class="tab-pane active" id="quiz" role="tabpanel" aria-labelledby="quiz-tab">
             <!-- Quiz Game Content Here -->
-            <p>First Game </p>
+            <p>Fast FOODS </p>
             <button id="start-quiz-btn" class="btn btn-primary">Game 1</button>
         </div>
-        <div class="tab-pane" id="game2" role="tabpanel" aria-labelledby="game2-tab">
-            <p>Data for Game 2 will be available soon.</p>
-        </div>
-        <div class="tab-pane" id="game3" role="tabpanel" aria-labelledby="game3-tab">
-            <p>Data for Game 3 will be available soon.</p>
-        </div>
+       <!-- Inside Game 2 tab pane -->
+    <div class="tab-pane" id="game2" role="tabpanel" aria-labelledby="game2-tab">
+        <p>Test THE FRUITS</p>
+        <button id="start-game2-btn" class="btn btn-primary">Start Game 2</button>
+    </div>
+<!-- Inside Game 3 tab pane -->
+    <div class="tab-pane" id="game3" role="tabpanel" aria-labelledby="game3-tab">
+        <p>Game of GAMES!</p>
+        <button id="start-game3-btn" class="btn btn-primary">Start Game 3</button>
+</div>
+
     </div>
 </div>
 
@@ -73,9 +78,25 @@
     $('#start-quiz-btn').click(function() {
         // Redirect to Quiz Game or Initialize Quiz Game here
         window.location.href = 'games/index1.html'; // Use the correct path or initialization method
+
        
     });
 </script>
+<script>
+        $('#start-quiz-btn').click(function() {
+            // Redirect to Quiz Game or Initialize Quiz Game here
+            window.location.href = 'games/index1.html'; // Use the correct path to Quiz Game
+        });
+        
+        $('#start-game2-btn').click(function() {
+            // Redirect to the Wordle-Like Game
+            window.location.href = 'games/index2.html'; // Adjust the path as necessary
+        });
+    
+        // Add more redirections for other games as necessary
+</script>
+    
+
 </body>
 </html>
 
