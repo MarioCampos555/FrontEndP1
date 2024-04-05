@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <!-- Use a consistent version of Bootstrap across all your HTML files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet/homePage.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Game Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="homePage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs/aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup/signup.html">Log-in/ Sign-up</a>
+              </li> 
+            <!-- Add more games or sections as needed -->
+          </ul>
+        </div>
+      </nav>
+
+
+      
+
+<div class="container mt-5">
+    <h2>Welcome to the Game Hub!</h2>
+    <p>Select a game to play:</p>
+
+    <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="gameTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="quiz-tab" data-toggle="tab" href="#quiz" role="tab" aria-controls="quiz" aria-selected="true">Game 1 </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="game2-tab" data-toggle="tab" href="#game2" role="tab" aria-controls="game2" aria-selected="false">Game 2 (Coming Soon)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="game3-tab" data-toggle="tab" href="#game3" role="tab" aria-controls="game3" aria-selected="false">Game 3 (Coming Soon)</a>
+            </li>
+        </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="quiz" role="tabpanel" aria-labelledby="quiz-tab">
+            <img src="img/fast_food.jpg" alt="fast_food">
+            <!-- Quiz Game Content Here -->
+            <p>Fast FOODS </p>
+            <button id="start-quiz-btn" class="btn btn-primary">Start Game 1</button>
+        </div>
+       <!-- Inside Game 2 tab pane -->
+    <div class="tab-pane" id="game2" role="tabpanel" aria-labelledby="game2-tab">
+        <img src="img/fruits.jpg" alt="fruits">
+        <p>Test THE FRUITS</p>
+        <button id="start-game2-btn" class="btn btn-primary">Start Game 2</button>
+    </div>
+<!-- Inside Game 3 tab pane -->
+    <div class="tab-pane" id="game3" role="tabpanel" aria-labelledby="game3-tab">
+        <img src="img/games.jpg" alt="games">
+        <p>Game of GAMES!</p>
+        <button id="start-game3-btn" class="btn btn-primary">Start Game 3</button>
+</div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $('#start-quiz-btn').click(function() {
+        // Redirect to Quiz Game or Initialize Quiz Game here
+        window.location.href = 'games/index1.html'; // Use the correct path or initialization method
+
+       
+    });
+</script>
+<script>
+        $('#start-quiz-btn').click(function() {
+            // Redirect to Quiz Game or Initialize Quiz Game here
+            window.location.href = 'games/index1.html'; // Use the correct path to Quiz Game
+        });
+        
+        $('#start-game2-btn').click(function() {
+            // Redirect to the Wordle-Like Game
+            window.location.href = 'games/index2.html'; // Adjust the path as necessary
+        });
+    
+        // Add more redirections for other games as necessary
+</script>
+    
+
+</body>
+</html>
+
