@@ -30,7 +30,7 @@ h1 {
 }
 
 #choices label:hover, #choices label:focus-within {
-    background-color: #0056b3;
+    background-color: #000000;
     transform: scale(1.02);
 }
 
