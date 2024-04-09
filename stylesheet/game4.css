@@ -1,0 +1,72 @@
+/* game4.css */
+body, html {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #def0d8; /* Light green background symbolizing nature */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz-container {
+    background-color: #ffffff; 
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #2d572c; /* Dark green color for titles */
+}
+
+#question {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #5a5a5a; /* Darker text for questions */
+}
+
+#choices {
+    margin: 20px 0;
+}
+
+#choices label {
+    display: block;
+    background-color: #8dc63f; /* Vibrant green for choice buttons */
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#choices label:hover, #choices label:focus-within {
+    background-color: #79b02e; /* A slightly darker green on hover */
+}
+
+button#next-btn {
+    background-color: #4a752c; /* Dark green for next button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#next-btn:hover {
+    background-color: #3e6124; /* Even darker green on hover */
+}
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #quiz-container {
+        width: 85%;
+        margin: 20px auto;
+    }
+}
