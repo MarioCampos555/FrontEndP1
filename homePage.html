@@ -35,40 +35,57 @@
 
 <div class="container mt-5">
     <h2>Welcome to the Game Hub!</h2>
-    <p>Select a game to play:</p>
+
 
     <!-- Games Navigation Section -->
-        <ul class="nav nav-tabs" id="gameTabs" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="quiz-tab" data-toggle="tab" href="#quiz" role="tab" aria-controls="quiz" aria-selected="true">Game 1 </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="game2-tab" data-toggle="tab" href="#game2" role="tab" aria-controls="game2" aria-selected="false">Game 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="game3-tab" data-toggle="tab" href="#game3" role="tab" aria-controls="game3" aria-selected="false">Game 3</a>
-            </li>
-        </ul>
+
     <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="quiz" role="tabpanel" aria-labelledby="quiz-tab">
-            <img src="img/fast_food.jpg" alt="fast_food">
-            <!-- Quiz Game Content Here -->
-            <p>Fast FOODS </p>
-            <button id="start-quiz-btn" class="btn btn-primary">Start Game 1</button>
+    <div class="container">
+        <p>Select a game to play:</p>
+        <div class="row">
+            <!-- Row for games 1 to 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/fast_food.jpg" alt="Game 1">
+                    <h5 class="card-title">FOODS</h5>
+                    <p class="card-text">test your fast foods.</p>
+                    <button id="start-game1-btn" class="btn btn-primary">Start Game 1</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/fruits.jpg" alt="Game 2">
+                    <h5 class="card-title">Fruits</h5>
+                    <p class="card-text">Quess the fruits.</p>
+                    <button id="start-game2-btn" class="btn btn-primary">Start Game 2</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/games.jpg" alt="Game 3">
+                    <h5 class="card-title">Games</h5>
+                    <p class="card-text">Guess the Games !.</p>
+                    <button id="start-game3-btn" class="btn btn-primary">Start Game 3</button>
+                </div>
+            </div>
         </div>
-       <!-- Inside Game 2 tab pane -->
-    <div class="tab-pane" id="game2" role="tabpanel" aria-labelledby="game2-tab">
-        <img src="img/fruits.jpg" alt="fruits">
-        <p>THE FRUITS</p>
-        <button id="start-game2-btn" class="btn btn-primary">Start Game 2</button>
+        <div class="row">
+            <!-- Row for new games 4 and 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/sweep.jpg" alt="Game 4">
+                    <h5 class="card-title">Mine Sweeper</h5>
+                    <p class="card-text">Puzzle Game.</p>
+                    <button id="start-game4-btn" class="btn btn-primary">Start Game 4</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+
+                </div>
+            </div>
+        </div>
     </div>
-<!-- Inside Game 3 tab pane -->
-    <div class="tab-pane" id="game3" role="tabpanel" aria-labelledby="game3-tab">
-        <img src="img/games.jpg" alt="games">
-        <p>Game of GAMES!</p>
-        <button id="start-game3-btn" class="btn btn-primary">Start Game 3</button>
-</div>
 
     </div>
 </div>
@@ -98,6 +115,12 @@
         $('#start-game3-btn').click(function() {
             // Redirect to the Wordle-Like Game
             window.location.href = 'games/index3.html'; // Adjust the path as necessary
+            
+        });
+        $('#start-game4-btn').click(function() {
+            // Redirect to the Wordle-Like Game
+            window.location.href = 'games/index4.html'; // Adjust the path as necessary
+            
         });
     
         // Add more redirections for other games as necessary
