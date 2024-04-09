@@ -1,15 +1,11 @@
 const questions = [
-    { question: "What fast food restaurant is known for its golden arches?", choices: ["KFC", "Subway", "McDonald's", "Burger King"], answer: "McDonald's" },
-    { question: "Which fast food chain specializes in tacos and burritos?", choices: ["Chipotle", "Taco Bell", "Del Taco", "Qdoba"], answer: "Taco Bell" },
-    { question: "In which fast food restaurant can you order a Frosty?", choices: ["Wendy's", "McDonald's", "Burger King", "Carl's Jr."], answer: "Wendy's" },
-    { question: "Which fast food chain is known for its 'square' hamburgers?", choices: ["McDonald's", "Wendy's", "In-N-Out", "Whataburger"], answer: "Wendy's" },
-    { question: "What is the main ingredient of a McDonald's Big Mac Sauce?", choices: ["Mayonnaise", "Mustard", "Ketchup", "Relish"], answer: "Mayonnaise" },
-    { question: "Which chain introduced the concept of a 'drive-thru' window?", choices: ["McDonald's", "Jack in the Box", "Wendy's", "In-N-Out Burger"], answer: "Jack in the Box" },
-    { question: "What fast food chain is known for its chicken sandwiches?", choices: ["KFC", "Chick-fil-A", "Popeyes", "Church's Chicken"], answer: "Chick-fil-A" },
-    { question: "Which pizza chain is famous for its 'stuffed crust' pizza?", choices: ["Domino's", "Pizza Hut", "Papa John's", "Little Caesars"], answer: "Pizza Hut" },
-    { question: "Where can you buy a 'Whopper'?", choices: ["McDonald's", "Burger King", "Wendy's", "Carl's Jr."], answer: "Burger King" },
-    { question: "What is the signature menu item at KFC?", choices: ["Chicken Sandwich", "Chicken Nuggets", "Fried Chicken", "Chicken Tenders"], answer: "Fried Chicken" },
-    { question: "Which fast food chain has a mascot named Ronald McDonald?", choices: ["KFC", "McDonald's", "Burger King", "Wendy's"], answer: "McDonald's" }
+    { question: "What is the name of the game engine owned by Epic Games, the company behind Fortnite?", choices: ["EA Games", "Rockstar Studios", "Epic Games", "Riot Games"], answer: "Epic Games" } , 
+    { question: "Making his debut in 1990's Super Mario World, what is the name of the enemy-eating, egg-throwing green dinosaur who serves as a sidekick to Mario and Luigi in the Mario franchise?", choices: ["Luigi", "Birdo", "Toad", "Yoshi"], answer: "Yoshi" } , 
+    { question: "What is thought to be the first video game, created in 1958 and becoming popular in the 1970s?", choices: ["Pac Man", "Pong", "Space Invaders", "Alien Invasion"], answer: "Pong" } , 
+    { question: "Which video game console released in 2006 pioneered the use of motion controls in its gameplay?", choices: ["Nintendo Wii", "Xbox Connect", "Playstation 3", "Nintendo DSi"], answer: "Nintendo Wii" } , 
+    { question: "In Mario Kart, the power-up that seeks out the player in first position and explodes on impact is a shell that is what color?", choices: ["Yellow", "Blue", "Green", "Red"], answer: "Blue" } , 
+    { question: "Pocket, Light, Color, and Advance were all styles or variants of what video game hardware system?", choices: ["Atari", "Playstation 1", "Game Boy"], answer: "Game Boy" } ,
+    { question: "What card game related to the Warcraft universe did Blizzard release in 2014?", choices: ["Hearthstone", "Slay the Spire", "World of Warcraft", "Warcraft III"], answer: "Hearthstone" }
 ];
 let currentQuestionIndex = 0;
 let score = 0;

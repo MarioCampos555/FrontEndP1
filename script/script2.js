@@ -1,15 +1,11 @@
 const questions = [
-    { question: "What fast food restaurant is known for its golden arches?", choices: ["KFC", "Subway", "McDonald's", "Burger King"], answer: "McDonald's" },
-    { question: "Which fast food chain specializes in tacos and burritos?", choices: ["Chipotle", "Taco Bell", "Del Taco", "Qdoba"], answer: "Taco Bell" },
-    { question: "In which fast food restaurant can you order a Frosty?", choices: ["Wendy's", "McDonald's", "Burger King", "Carl's Jr."], answer: "Wendy's" },
-    { question: "Which fast food chain is known for its 'square' hamburgers?", choices: ["McDonald's", "Wendy's", "In-N-Out", "Whataburger"], answer: "Wendy's" },
-    { question: "What is the main ingredient of a McDonald's Big Mac Sauce?", choices: ["Mayonnaise", "Mustard", "Ketchup", "Relish"], answer: "Mayonnaise" },
-    { question: "Which chain introduced the concept of a 'drive-thru' window?", choices: ["McDonald's", "Jack in the Box", "Wendy's", "In-N-Out Burger"], answer: "Jack in the Box" },
-    { question: "What fast food chain is known for its chicken sandwiches?", choices: ["KFC", "Chick-fil-A", "Popeyes", "Church's Chicken"], answer: "Chick-fil-A" },
-    { question: "Which pizza chain is famous for its 'stuffed crust' pizza?", choices: ["Domino's", "Pizza Hut", "Papa John's", "Little Caesars"], answer: "Pizza Hut" },
-    { question: "Where can you buy a 'Whopper'?", choices: ["McDonald's", "Burger King", "Wendy's", "Carl's Jr."], answer: "Burger King" },
-    { question: "What is the signature menu item at KFC?", choices: ["Chicken Sandwich", "Chicken Nuggets", "Fried Chicken", "Chicken Tenders"], answer: "Fried Chicken" },
-    { question: "Which fast food chain has a mascot named Ronald McDonald?", choices: ["KFC", "McDonald's", "Burger King", "Wendy's"], answer: "McDonald's" }
+    { question: "Which of the following fruits are considered berries?", choices: ["Starberries", "Apples", "Mangos", "Bananas"], answer: "Bananas" },
+    { question: "How many seeds can a pomegranate hold up to?", choices: ["100", " 540", "1400", "2000"], answer: "1400" },
+    { question: "Which fruit holds more vitamin C?", choices: ["Kiwis", "Oranges", "Grapes", "Pomegranates"], answer: "Kiwis" },
+    { question: "What is the science of fruit growing called?", choices: ["Fromology", "Fructology", "Pomology", "Dendrology"], answer: "Pomology" } ,
+    { question: "Which fruit tastes like chocolate pudding?", choices: ["Cherimoya", "Fruit of the Hala AKA Puhala Tree", "Black Sapote", "Quince"], answer: "Black Sapote" } ,
+    { question: "Which fruit is a hybrid of the pomelo and mandarin?", choices: ["Lemon", "Lime", "Kumquat", "Orange"], answer: "Orange" } ,
+    { question: "Which fruit looks like an inside-out starberry?", choices: ["Pineberry", "Cloudberry", "Farkleberry", "Salmonberry"], answer: "Pineberry" }
 ];
 let currentQuestionIndex = 0;
 let score = 0;
