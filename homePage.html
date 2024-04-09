@@ -81,7 +81,10 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-
+                    <img src="img/connect.jpg" alt="Game 5">
+                    <h5 class="card-title">Game 5 Title</h5>
+                    <p class="card-text">Description for Game 5.</p>
+                    <button id="start-game5-btn" class="btn btn-primary">Start Game 5</button>
                 </div>
             </div>
         </div>
@@ -94,15 +97,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>
-    $('#start-quiz-btn').click(function() {
-        // Redirect to Quiz Game or Initialize Quiz Game here
-        window.location.href = 'games/index1.html'; // Use the correct path or initialization method
+
 
        
-    });
 </script>
 <script>
-        $('#start-quiz-btn').click(function() {
+        $('#start-game1-btn').click(function() {
             // Redirect to Quiz Game or Initialize Quiz Game here
             window.location.href = 'games/index1.html'; // Use the correct path to Quiz Game
         });
@@ -120,6 +120,11 @@
         $('#start-game4-btn').click(function() {
             // Redirect to the Wordle-Like Game
             window.location.href = 'games/index4.html'; // Adjust the path as necessary
+            
+        });
+        $('#start-game5-btn').click(function() {
+            // Redirect to the Wordle-Like Game
+            window.location.href = 'games/index5.html'; // Adjust the path as necessary
             
         });
     
