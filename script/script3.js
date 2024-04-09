@@ -1,8 +1,5 @@
 const questions = [
-    { question: "Which of the following fruits are considered berries?", choices: ["Starberries", "Apples", "Mangos", "Bananas"], answer: "Bananas" },
-    { question: "How many seeds can a pomegranate hold up to?", choices: ["100", " 540", "1400", "2000"], answer: "1400" },
-    { question: "Which fruit holds more vitamin C?", choices: ["Kiwis", "Oranges", "Grapes", "Pomegranates"], answer: "Kiwis" },
-    { question: "What is the science of fruit growing called?", choices: ["Fromology", "Fructology", "Pomology", "Dendrology"], answer: "Pomology" }
+    { question: "What is the name of the game engine owned by Epic Games, the company behind Fortnite?", choices: ["EA Games", "Rockstar Studios", "Epic Games", "Riot Games"], answer: "Epic Games" }
 ];
 let currentQuestionIndex = 0;
 let score = 0;
