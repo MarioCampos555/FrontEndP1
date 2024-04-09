@@ -1,0 +1,67 @@
+
+body, html {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f0f0f0; /* Dark background */
+    color: #FFFFFF;
+    align-items: center;
+}
+
+#quiz-container {
+    background-color: white; 
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+h1 {
+    color: black; 
+}
+
+#question {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: black; 
+}
+
+#choices label {
+    background-color: #4ea2c0; /* Bootstrap primary blue */
+    border-color: white;
+    color: white;
+    transition: transform 0.2s;
+    padding: 5px;
+    margin: 5px;
+}
+
+#choices label:hover, #choices label:focus-within {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+button#next-btn {
+    background-color: #FF8C32; /* Matching vibrant orange */
+    border: none;
+}
+
+button#next-btn:hover {
+    background-color: #e76e22; /* Darker shade for hover effect */
+}
+
+#timer-color {
+    color: black;
+}
+
+#timer {
+    color: #ff0000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#timer-container {
+    position: relative;
+    margin: auto;
+    height: 90px;
+    width: 440px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
